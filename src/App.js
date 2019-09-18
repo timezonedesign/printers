@@ -24,7 +24,7 @@ export default class Form extends Component {
     event.preventDefault();
     const { name, message } = this.state;
     await axios.post(
-      'https://8qna0p3235.execute-api.us-east-2.amazonaws.com/default/printer_lambda',
+      'https://ho64suh5r1.execute-api.us-east-2.amazonaws.com/default/serverlessAppFunction',
       { key1: `${name}, ${message}` }
     );
   }
