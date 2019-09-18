@@ -31,7 +31,7 @@ class Input extends Component {
     return (
       <Grid item xs={12} className="form">
         <form onSubmit={this.handleSubmit}>
-          <TextField
+          <TextField className="input"
             onChange={this.handleChange}
             value={this.state.title}
             type="text"
@@ -39,8 +39,7 @@ class Input extends Component {
             name="title"
             required
           />
-          <br />
-          <TextField
+          <TextField className="input"
             onChange={this.handleChange}
             value={this.state.content}
             type="text"
